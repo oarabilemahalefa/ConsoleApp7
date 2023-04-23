@@ -10,6 +10,7 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Recipe recipe = new Recipe();
             while (true)
             {
@@ -26,7 +27,7 @@ namespace ConsoleApp7
                 int choice = int.Parse(input);
 
                 switch (choice)
-                {
+               { 
                     case 1:
                         recipe.EnterRecipe();
                         break;
@@ -47,8 +48,9 @@ namespace ConsoleApp7
                     default:
                         Console.WriteLine("Invalid choice.");
                         break;
-                }
+               }
             }
+
         }
     }
 
