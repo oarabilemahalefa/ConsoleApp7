@@ -10,7 +10,7 @@ namespace ConsoleApp7
     {
        // private string[] ingredients;
        // private double[] quantities;
-        private string[] units;
+       // private string[] units;
         private string[] steps;
 
         private string[] ingredients
@@ -24,10 +24,15 @@ namespace ConsoleApp7
             get { return quantities; }
             set { quantities = value; }
         }
+        private string[] units
+        {
+            get { return units; }
+            set { units = value; }
+        }
 
         public void InputRecipe()
         {
-            Console.WriteLine("How many ingredients are in the recipe?");
+            Console.WriteLine("How many ingrediments are in the recipe?");
             int numIngredients = int.Parse(Console.ReadLine());
 
             ingredients = new string[numIngredients];
