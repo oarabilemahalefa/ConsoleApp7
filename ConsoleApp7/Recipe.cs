@@ -32,7 +32,7 @@ namespace ConsoleApp7
 
         public void InputRecipe()
         {
-            Console.WriteLine("How many ingrediments are in the recipe?");
+            Console.WriteLine("How many ingredients are in the recipe?");
             int numIngredients = int.Parse(Console.ReadLine());
 
             ingredients = new string[numIngredients];
