@@ -8,12 +8,20 @@ namespace ConsoleApp7
 {
     class Recipe
     {
-        private string[] ingredients;
+       // private string[] ingredients;
         private double[] quantities;
         private string[] units;
         private string[] steps;
 
-        public void EnterRecipe()
+        private string[] ingredients
+        {
+            get { return ingredients; }
+            set { ingredients = value; }
+        }
+
+      
+
+        public void InputRecipe()
         {
             Console.WriteLine("How many ingredients are in the recipe?");
             int numIngredients = int.Parse(Console.ReadLine());
@@ -27,7 +35,7 @@ namespace ConsoleApp7
                 Console.WriteLine($"Enter the name of ingredient {i + 1}:");
                 ingredients[i] = Console.ReadLine();
 
-                Console.WriteLine($"Enter the quantity of ingredient {i + 1}:");
+                Console.WriteLine($"Enter the quantity  {i + 1}:");
                 quantities[i] = double.Parse(Console.ReadLine());
 
                 Console.WriteLine($"Enter the unit of measurement for ingredient {i + 1}:");
@@ -61,7 +69,7 @@ namespace ConsoleApp7
             }
         }
 
-        public void ScaleRecipe()
+        public void Scale()
         {
             Console.WriteLine("Enter the scale factor (0.5, 2, or 3):");
             double scaleFactor = double.Parse(Console.ReadLine());
@@ -72,17 +80,17 @@ namespace ConsoleApp7
             }
         }
 
-        public void ResetQuantities()
+        public void Reset()
         {
-            
+            //put the reset message
             for (int i = 0; i < quantities.Length; i++)
             {
                 quantities[i] = 0;
             }
-            
+
         }
 
-        public void ClearData()
+        public void Clear()
         {
             ingredients = null;
             quantities = null;

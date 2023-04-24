@@ -29,19 +29,19 @@ namespace ConsoleApp7
                 switch (choice)
                { 
                     case 1:
-                        recipe.EnterRecipe();
+                        recipe.InputRecipe();
                         break;
                     case 2:
                         recipe.DisplayRecipe();
                         break;
                     case 3:
-                        recipe.ScaleRecipe();
+                        recipe.Scale();
                         break;
                     case 4:
-                        recipe.ResetQuantities();
+                        recipe.Reset();
                         break;
                     case 5:
-                        recipe.ClearData();
+                        recipe.Clear();
                         break;
                     case 6:
                         return;
