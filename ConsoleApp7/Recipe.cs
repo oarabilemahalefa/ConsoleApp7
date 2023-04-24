@@ -11,7 +11,7 @@ namespace ConsoleApp7
        // private string[] ingredients;
        // private double[] quantities;
        // private string[] units;
-        private string[] steps;
+       // private string[] steps;
 
         private string[] ingredients
         {
@@ -30,6 +30,11 @@ namespace ConsoleApp7
             set { units = value; }
         }
 
+        private string[] steps
+        {
+            get { return steps; }
+            set { steps = value; }
+        }
         public void InputRecipe()
         {
             Console.WriteLine("How many ingredients are in the recipe?");
