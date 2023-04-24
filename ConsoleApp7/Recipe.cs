@@ -8,12 +8,12 @@ namespace ConsoleApp7
 {
     class Recipe
     {
-       // private string[] ingredients;
-       // private double[] quantities;
-       // private string[] units;
-       // private string[] steps;
+        private string[] ingredients;
+        private double[] quantities;
+        private string[] units;
+       private string[] steps;
 
-        private string[] ingredients
+        /*private string[] ingredients
         {
             get { return ingredients; }
             set { ingredients = value; }
@@ -34,7 +34,7 @@ namespace ConsoleApp7
         {
             get { return steps; }
             set { steps = value; }
-        }
+        }*/
         public void InputRecipe()
         {
             Console.WriteLine("How many ingredients are in the recipe?");
@@ -70,6 +70,7 @@ namespace ConsoleApp7
 
         public void DisplayRecipe()
         {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("Ingredients:");
             for (int i = 0; i < ingredients.Length; i++)
             {
@@ -104,12 +105,32 @@ namespace ConsoleApp7
 
         }
 
+       
         public void Clear()
         {
-            ingredients = null;
-            quantities = null;
-            units = null;
-            steps = null;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine("Are you sure, you want to clear \n" +
+                "Press Y to confirm or N to cancel");
+            String po = Console.ReadLine();
+            if (po.Equals("Y") || po.Equals("y"))
+            {
+                ingredients = null;
+                quantities = null;
+                units = null;
+                steps = null;
+                Console.WriteLine("Recipe has been cleared");
+            }
+            else if (po.Equals("N") || po.Equals("n"))
+            {
+                Console.WriteLine("You've canceled");
+
+            }
+            else
+            {
+                Console.WriteLine("Invaild choice");
+            }
+
         }
     }
 }
