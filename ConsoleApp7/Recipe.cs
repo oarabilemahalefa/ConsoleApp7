@@ -112,8 +112,8 @@ namespace ConsoleApp7
 
             Console.WriteLine("Are you sure, you want to clear \n" +
                 "Press Y to confirm or N to cancel");
-            String po = Console.ReadLine();
-            if (po.Equals("Y") || po.Equals("y"))
+            String opps = Console.ReadLine();
+            if (opps.Equals("Y") || opps.Equals("y"))
             {
                 ingredients = null;
                 quantities = null;
@@ -121,7 +121,7 @@ namespace ConsoleApp7
                 steps = null;
                 Console.WriteLine("Recipe has been cleared");
             }
-            else if (po.Equals("N") || po.Equals("n"))
+            else if (opps.Equals("N") || opps.Equals("n"))
             {
                 Console.WriteLine("You've canceled");
 
