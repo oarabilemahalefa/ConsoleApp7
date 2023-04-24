@@ -9,7 +9,7 @@ namespace ConsoleApp7
     class Recipe
     {
        // private string[] ingredients;
-        private double[] quantities;
+       // private double[] quantities;
         private string[] units;
         private string[] steps;
 
@@ -19,7 +19,11 @@ namespace ConsoleApp7
             set { ingredients = value; }
         }
 
-      
+        private double[] quantities
+        {
+            get { return quantities; }
+            set { quantities = value; }
+        }
 
         public void InputRecipe()
         {
