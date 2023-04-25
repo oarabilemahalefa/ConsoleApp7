@@ -9,7 +9,7 @@ namespace ConsoleApp7
 {
     class Recipe
     { //created variables for my application
-        private string[] ingredients;
+        private string[] ingredients; 
         private double[] quantities;
         private string[] units;
        private string[] steps;
