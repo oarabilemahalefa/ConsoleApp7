@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp7
+
 {
     class Recipe
     { //created variables for my application
