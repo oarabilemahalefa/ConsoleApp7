@@ -11,7 +11,7 @@ namespace ConsoleApp7
     { //created variables for my application
         private string[] ingredients; 
         private double[] quantities;
-        private string[] units;
+        private string[] unit;
        private string[] steps;
        private double scaleFactor = 1.0;
         /*private string[] ingredients
@@ -45,7 +45,7 @@ namespace ConsoleApp7
 
             ingredients = new string[numIngredients];
             quantities = new double[numIngredients];
-            units = new string[numIngredients];
+            unit = new string[numIngredients];
 
             for (int i = 0; i < numIngredients; i++)
             {
@@ -56,7 +56,7 @@ namespace ConsoleApp7
                 quantities[i] = double.Parse(Console.ReadLine());
 
                 Console.WriteLine($"Enter the unit of measurement for ingredient {i + 1}:");
-                units[i] = Console.ReadLine();
+                unit[i] = Console.ReadLine();
             }
 
             Console.WriteLine("How many steps are in the recipe?");
