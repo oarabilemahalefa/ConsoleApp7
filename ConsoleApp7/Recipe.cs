@@ -88,7 +88,7 @@ namespace ConsoleApp7
             }
         }
 
-       
+
         //this method will scale the users information by the listed numbers
         public void Scale()
         {
@@ -117,34 +117,15 @@ namespace ConsoleApp7
             }
 
         }
-       
+
         //this method will clear all the information the user has entered
         //but first it will ask them to confirm if they are sure
         public void Clear()
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine("Are you sure, you want to clear? \n" +
-                "Press Y to confirm or N to cancel");
-            String opps = Console.ReadLine();
-            if (opps.Equals("Y") || opps.Equals("y"))
-            {
-                ingredients = null;
-                quantities = null;
-                units = null;
-                steps = null;
-                Console.WriteLine("Recipe has been cleared");
-            }
-            else if (opps.Equals("N") || opps.Equals("n"))
-            {
-                Console.WriteLine("You've canceled");
-
-            }
-            else
-            {
-                Console.WriteLine("Invaild choice");
-            }
-
+            ingredients = null;
+            quantities = null;
+            units = null;
+            steps = null;
         }
     }
 }
