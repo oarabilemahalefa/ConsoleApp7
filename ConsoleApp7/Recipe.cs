@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace ConsoleApp7
 {
     class Recipe
-    {
+    { //created variables for my application
         private string[] ingredients;
         private double[] quantities;
         private string[] units;
        private string[] steps;
-
+       private double scaleFactor = 1.0;
         /*private string[] ingredients
         {
             get { return ingredients; }
@@ -35,6 +35,7 @@ namespace ConsoleApp7
             get { return steps; }
             set { steps = value; }
         }*/
+        //input method which has code for ingridients,quantity,measurement, and number of steps for the recipe
         public void InputRecipe()
         {
             Console.WriteLine("How many ingredients are in the recipe?");
@@ -68,6 +69,7 @@ namespace ConsoleApp7
             }
         }
 
+        // this method will display the information that the user entered
         public void DisplayRecipe()
         {
             Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -84,17 +86,25 @@ namespace ConsoleApp7
             }
         }
 
+       
+        //this method will scale the users information by the listed numbers
         public void Scale()
         {
-            Console.WriteLine("Enter the scale factor (0.5, 2, or 3):");
-            double scaleFactor = double.Parse(Console.ReadLine());
+            Console.WriteLine("\nEnter the scaling factor (0.5, 2, or 3):");
+            double factor = double.Parse(Console.ReadLine());
 
-            for (int i = 0; i < quantities.Length; i++)
+            if (factor == 0.5 || factor == 2 || factor == 3)
             {
-                quantities[i] *= scaleFactor;
+
+                scaleFactor = factor;
+                Console.WriteLine($"\nRecipe scaled by factor {factor}.");
+            }
+            else
+            {
+                Console.WriteLine("\nInvalid scaling factor.");
             }
         }
-
+        //the mothod will reset the quanties to the original value
         public void Reset()
         {
             //put the reset message
@@ -104,13 +114,14 @@ namespace ConsoleApp7
             }
 
         }
-
        
+        //this method will clear all the information the user has entered
+        //but first it will ask them to confirm if they are sure
         public void Clear()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
 
-            Console.WriteLine("Are you sure, you want to clear \n" +
+            Console.WriteLine("Are you sure, you want to clear? \n" +
                 "Press Y to confirm or N to cancel");
             String opps = Console.ReadLine();
             if (opps.Equals("Y") || opps.Equals("y"))

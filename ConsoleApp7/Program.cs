@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace ConsoleApp7
 {
     class Program
-    {
+    {//my main method has code that will display menu and will also call
+     //other method in recipe class that will be used in the application
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Green;
