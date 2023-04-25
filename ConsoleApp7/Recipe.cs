@@ -38,6 +38,7 @@ namespace ConsoleApp7
         //input method which has code for ingridients,quantity,measurement, and number of steps for the recipe
         public void InputRecipe()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("How many ingredients are in the recipe?");
             int numIngredients = int.Parse(Console.ReadLine());
 
@@ -90,6 +91,7 @@ namespace ConsoleApp7
         //this method will scale the users information by the listed numbers
         public void Scale()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nEnter the scaling factor (0.5, 2, or 3):");
             double factor = double.Parse(Console.ReadLine());
 
