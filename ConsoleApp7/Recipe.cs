@@ -124,7 +124,7 @@ namespace ConsoleApp7
         {
             ingredients = null;
             quantities = null;
-            units = null;
+            unit = null;
             steps = null;
         }
     }
