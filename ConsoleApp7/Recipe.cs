@@ -86,7 +86,7 @@ namespace ConsoleApp7
             {
                 Console.WriteLine($"{i + 1}. {steps[i]}");
             }
-        }
+        } 
 
 
         //this method will scale the users information by the listed numbers
