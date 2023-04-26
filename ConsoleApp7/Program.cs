@@ -15,8 +15,8 @@ namespace ConsoleApp7
             Recipe recipe = new Recipe();
             while (true)
             {
-                
-                
+
+
                 Console.WriteLine("What would you like to do? \n"
                                 + "1) Enter a new recipe. \n"
                                 + "2) Display the current recipe. \n"
@@ -24,6 +24,7 @@ namespace ConsoleApp7
                                 + "4) Reset the recipe quantities. \n"
                                 + "5) Clear all data. \n"
                                 + "6) Exit the program.");
+
                 string input = Console.ReadLine();
                 int choice = int.Parse(input);
 
