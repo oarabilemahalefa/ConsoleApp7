@@ -1,0 +1,14 @@
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.AssemblyReference.cache
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Users\makwe\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.AssemblyReference.cache
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Users\makwe\source\repos\ST10207846_Oarabile Mahalefa_Part1_PROG6221\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
